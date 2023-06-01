@@ -1,0 +1,157 @@
+:root {
+  --lighting-color: #0089b7;
+  --dark-color: #003d62;
+  --darker-color: #003251;
+  --secondary-color: #fff700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  color: #fff;
+}
+body {
+  font-size: 1.4rem;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+header {
+  background: var(--lighting-color);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+nav li {
+  font-size: 1.8rem;
+  border-bottom: 0.2rem solid transparent;
+  transition: 0.3s ease-in-out;
+}
+nav li:hover {
+  border-bottom: 0.2rem var(--secondary-color) solid;
+  transition: 0.3s ease-in-out;
+}
+nav ul {
+  display: flex;
+  gap: 2.5rem;
+}
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+}
+#hero {
+  border-bottom: 4px solid var(--lighting-color);
+  padding: 4rem 0;
+  background: var(--dark-color);
+}
+#hero .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero_cntant {
+  display: grid;
+  place-items: center;
+}
+#hero h1 {
+  font-size: 3rem;
+}
+.hi_text {
+  font-size: 6rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+.name_text {
+  font-size: 5rem;
+}
+
+#hero h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  form {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+#projects {
+  background: var(--darker-color);
+}
+#projects h2 {
+  font-size: 6rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.projects_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.grid_item {
+  display: grid;
+  place-items: center;
+}
+.card {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+}
+.card_contant {
+  padding: 2rem;
+  position: relative;
+  top: -6.5rem;
+  margin-bottom: -6.5rem;
+  transition: 0.8s ease-in-out;
+  transform: translateY(100px);
+}
+.card:hover .card_contant {
+  background-color: white;
+  color: var(--dark-color);
+  transform: translateY(0px);
+}
