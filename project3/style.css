@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+section {
+  color: #fff;
+  background-color: #000000b2;
+}
+h1 {
+  word-spacing: 5px;
+  letter-spacing: 2.5px;
+}
+h2 {
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.pera {
+  padding: 30px 50px;
+  text-align: center;
+}
+.pera p {
+  padding: 20px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+#image {
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  background-clip: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image1 {
+  min-height: 100vh;
+  background-image: url(./images/image1.png);
+}
+
+.image2 {
+  min-height: 60vh;
+  background-image: url(./images/image2.png);
+}
+.image3 {
+  min-height: 60vh;
+  background-image: url(./images/image3.png);
+}
+
+.image1 h1,
+.image2 h1,
+.image3 h1 {
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  position: absolute;
+}
+.image2 h1 p {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #b19797d7;
+}
+
+.image3 h1 p {
+  background-color: #c760d4a4;
+  display: inline-block;
+  padding: 20px 30px;
+}
+.image1 h1 p {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #757373d7;
+}
+

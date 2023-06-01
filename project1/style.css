@@ -1,0 +1,115 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* main_container style starts hare */
+.main_container {
+  height: 100%;
+  background-color: #e5e5fd;
+}
+/* contant  */
+.contant {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* header */
+.header_container {
+  padding: 5rem 0 2rem 0;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+.header_container .image img {
+  border-radius: 50rem;
+  width: 22rem;
+}
+.header_container .name {
+  text-align: end;
+  margin-top: 10rem;
+  font-size: 2.7rem;
+}
+.header_container .name h4 {
+  font-weight: 500;
+  padding-top: 1rem;
+  font-size: 1.8rem;
+}
+/* main _article 01 section  */
+.article1 {
+  margin: 5rem 0 5.5rem 0;
+}
+.article1 h1 {
+  padding-bottom: 1rem;
+  font-weight: 300;
+  font-size: 6rem;
+}
+.article1 p {
+  text-align: justify;
+  word-spacing: 0.3rem;
+  line-height: 1.6;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+/* article2  */
+.article2 h3 {
+  padding-bottom: 2rem;
+  font-weight: 300;
+  font-size: 3rem;
+}
+.article2 ul {
+  margin-left: 4rem;
+  font-size: 1.5rem;
+}
+.article2 ul li {
+  margin-bottom: 1rem;
+}
+/* Footer  */
+footer {
+  padding: 4rem 0 10rem 0;
+}
+.footer_contant {
+  text-align: end;
+  font-size: 1.37rem;
+}
+.footer_contant p a {
+  color: blue;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+.footer_contant p a:hover {
+  color: red;
+  transition: 0.3s ease-in-out;
+  text-decoration: underline;
+}
+/* media  */
+@media (max-width: 500px) {
+  .header_container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 786px) {
+  .name h1 {
+    margin-top: -6.5rem;
+    font-size: 4rem;
+  }
+  .header_container .name h4 {
+    font-size: 1.4rem;
+  }
+  .contant {
+    padding: 1rem;
+  }
+
+  .article1 h1 {
+    font-size: 4rem;
+  }
+}
+
+/* main_container style End hare */
